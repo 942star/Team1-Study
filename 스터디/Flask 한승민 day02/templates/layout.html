@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+
+    {% if title %}
+      <title>Flask 블로그 - {{ title }}</title>
+    {% else %}
+      <title>Flask 블로그</title>
+    {% endif %}
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="/">Flask 블로그</a>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+      </nav>
+      <hr>
+    </header>
+
+    <main role="main">
+    {% for i in range(10) %}
+        <p>{{ i }}</p>
+    {% endfor %}
+    {% print('HI') %}
+    <!-- Main content block -->
+    {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>
