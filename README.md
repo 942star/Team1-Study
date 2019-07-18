@@ -31,8 +31,8 @@
   - recursive
   - first class fuction 이해
   - higher order function 이해
-### 객체지향 프로그래밍 (7월 4일 (목)) 
-### 디자인 패턴 (7월 5일 (금))
+### 객체지향 프로그래밍
+### 디자인 패턴
 
 ## 데이터 처리
 ### 정형 데이터 (RDBMS, SQL)
