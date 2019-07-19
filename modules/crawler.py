@@ -12,7 +12,7 @@ import json
 from selenium import webdriver
 
 
-def download(method='get', url, 
+def download(method='get', url='', 
             params=None, data=None, 
             headers = {
                 'User-Agent':
