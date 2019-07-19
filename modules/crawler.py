@@ -39,7 +39,7 @@ def download(method='get', url,
     return resp
 
 
-def download_html_file(html, filename='result.html', encoding='utf8'):
+def to_html_file(html, filename='result.html', encoding='utf8'):
     '''
     문자열을 filename 위치에 html 파일 형식으로 저장합니다.
     '''
