@@ -3,7 +3,7 @@
   <img src='https://enveco.korea.ac.kr/_res/enveco/img/quick_link_03.png' width='850' height='200' align='center'/>
 </center>
 
-# K-Data 데이터진흥원 주관 빅데이터 청년인재 고려대학교 과정
+# K-Data 빅데이터 청년인재 고려대학교 과정
 1조 수업 및 스터디 활동 정리자료 GitHub
 
 ## 1조 소개
