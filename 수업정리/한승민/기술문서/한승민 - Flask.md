@@ -14,15 +14,22 @@ from flask import Flask, render_template, redirect, url_for, flash, request
   ```python
   # app.py
   
-  @app.route('/board/view/<int: no>')
+  @app.route('/board/list', methods=['GET'])
+  def listBoard():
+      return render_template('board/list.html', resultset=model.Board.query.all())
+  
+  @app.route('/board/view/<int: no>', method=['GET'])
   def viewBoard(no):
-      return render_template('/board/list.html', resultset=models.Board.query.filter_by(no=no).first())
+      return render_template('/board/view.html', resultset=models.Board.query.filter_by(no=no).first())
   
   
-  @app.route('/board/add/<int: no>')
+  @app.route('/board/add/<int: no>', methods=['GET', 'POST'])
   def addBoard(no):
-      # source code ...
-      return url_for('listBoard', resultset=models.Board.query.filter_by(no=no).first())
+      # 밑은 url_for 함수의 단순한 예시를 보여주기 위한 코드임
+      if request.method == 'GET':
+          return redirect(url_for('viewBoard', resultset=models.Board.query.filter_by(no=no).first()))
+      else:
+          return redirect(url_for('listBoard'))
   ```
   > `endpoint` is an identifier that is used in determining what logical unit of your code should handle the request
     ([reference](https://stackoverflow.com/questions/19261833/what-is-an-endpoint-in-flask))
