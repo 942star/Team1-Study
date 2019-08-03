@@ -22,7 +22,6 @@ from flask import Flask, render_template, redirect, url_for, flash, request
   def viewBoard(no):
       return render_template('/board/view.html', resultset=models.Board.query.filter_by(no=no).first())
   
-  
   @app.route('/board/add/<int: no>', methods=['GET', 'POST'])
   def addBoard(no):
       # 밑은 url_for 함수의 단순한 예시를 보여주기 위한 코드임
