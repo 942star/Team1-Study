@@ -10,7 +10,7 @@ from flask import Flask, render_template, redirect, url_for, flash, request
 - Flask: Web Application 객체
 - render_template: jinja2 template을 렌더링할 수 있도록 해주는 모듈
 - redirect: 다른 url로 redirect 할 수 있도록 해주는 함수
-- `url_for`: `url_for` 함수는 함수 이름으로 된 종단점(endpoint)의 URL을 생성해주는 함수이며, 예시는 다음과 같음.
+- url_for: url_for 함수는 함수 이름으로 된 종단점(endpoint)의 URL을 생성해주는 함수이며, 예시는 다음과 같음.
   ```python
   # app.py
   
