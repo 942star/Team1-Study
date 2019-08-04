@@ -24,6 +24,7 @@ LSTM의 기본 구조는 RNN 구조이기 때문에 다 같은 계열 모델들 
 LSTM을 좀 더 자세히 설명해보자면 예를 들어, a-b-c의 시퀀스인데 실제 중요한 시퀀스는 a-(b)-c 일 수도 있으니 w를 조절하는 방법이 LSTM이다.
 
 ![Figure](https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/14b4127ef56f57eab19bb48d80ec169e7b1be944/3-Figure2-1.png)
+- https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/14b4127ef56f57eab19bb48d80ec169e7b1be944/3-Figure2-1.png
 
 위 그림을 살펴보면 이전 인풋을 relu로 바로 다음 output으로 보내는 부분이 셀에 존재한다.
 다시 앞서 설명한 예시를 적용해보았을 때 결국 a-b-c가 아니라 a-c가 된다.
